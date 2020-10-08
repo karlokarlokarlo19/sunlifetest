@@ -1,0 +1,121 @@
+<ion-header [translucent]="true" class="header ion-no-border">
+  <ion-toolbar class="toolbar1">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="bottom_avtar">
+      <ion-thumbnail>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-thumbnail>
+      <span class="large">Good Afternoon</span>
+      <span class="large bold">{{loggedIn}} </span>
+    </div>
+  </ion-toolbar>
+  <ion-toolbar class="toolbar2">
+    <ion-tabs class="tabs">
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button disabled=true>
+          <ion-icon name="person"></ion-icon>
+          Manage ILAS Funds
+        </ion-tab-button>
+        <ion-tab-button disabled=true>
+          <ion-icon name="call"></ion-icon>
+          Claims
+        </ion-tab-button>
+        <ion-tab-button (click)="navigate()">
+          <ion-icon name="settings">
+          </ion-icon>
+          Policy Serving
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="folder-open"></ion-icon>
+            <span class="medium">More value from one policy to another</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=8 class="ion-text-left medium indent bold">
+            Pay with Policy Value
+          </ion-col>
+          <ion-col class="ion-text-right">></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=8 class="ion-text-left medium indent bold">
+            Standing Instructions
+          </ion-col>
+          <ion-col class="ion-text-right">></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="folder-open"></ion-icon>
+            <span class=" medium">Cash out your policy values</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=8 class="ion-text-left medium indent bold">
+            Value Withdrawal
+          </ion-col>
+          <ion-col class="ion-text-right">></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=8 class="ion-text-left medium indent bold">
+            Payout Method
+          </ion-col>
+          <ion-col class="ion-text-right">></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="folder-open"></ion-icon>
+            <span class="medium">Take loan against your policy value</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=8 class="ion-text-left medium indent bold">
+            Loans
+          </ion-col>
+          <ion-col class="ion-text-right">></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="folder-open"></ion-icon>
+            <span class="medium">Payment options for your premiums</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=8 class="ion-text-left medium indent bold">
+            Premium payment method
+          </ion-col>
+          <ion-col class="ion-text-right">></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

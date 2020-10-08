@@ -1,0 +1,74 @@
+.header {
+  height: 40%;
+  border: 0;
+}
+
+.toolbar1 {
+  height: 65%;
+  width: 100%;
+  --background: var(--ion-sunlife-1st-toolbar);
+}
+
+.toolbar2 {
+  display: flex;
+  height: 35%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  --background: var(--ion-sunlife-2nd-toolbar);
+}
+
+.footer {
+  --background: var(--ion-background-color) !important;
+}
+
+.bottom_avtar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+  flex-direction: column;
+  color: white;
+}
+
+.flexcol {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 8px;
+}
+
+.medium {
+  font-size: 12px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.indent {
+  text-indent: 30px;
+}
+
+ion-tab-bar,
+ion-tab-button {
+  border: 0;
+  --background: var(--ion-sunlife-2nd-toolbar);
+}
+
+ion-icon {
+  color: #1f1f1f;
+}
+
+ion-tab-button {
+  color: #1f1f1f;
+}

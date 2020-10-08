@@ -1,0 +1,23 @@
+ion-col {
+  padding: 0;
+}
+
+.number {
+  text-align: right;
+}
+
+.blue {
+  --color: var(--ion-sunlife-blue);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.policyToolbar {
+  --background: var(--ion-sunlife-2nd-toolbar);
+}
+
+.alertCard {
+  --border-color: red;
+}

@@ -1,0 +1,111 @@
+<ion-header [translucent]="true" class="header ion-no-border">
+  <ion-toolbar class="toolbar1">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="bottom_avtar">
+      <ion-thumbnail>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-thumbnail>
+      <span class="large">Good Afternoon</span>
+      <span class="large bold">{{loggedIn}} </span>
+    </div>
+  </ion-toolbar>
+  <ion-toolbar class="toolbar2">
+    <ion-tabs class="tabs">
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button>
+          <ion-icon name="person"></ion-icon>
+          Manage ILAS Funds
+        </ion-tab-button>
+        <ion-tab-button>
+          <ion-icon name="call"></ion-icon>
+          Claims
+        </ion-tab-button>
+        <ion-tab-button (click)="navigateExpanded()">
+          <ion-icon name="settings"></ion-icon>
+          Policy Serving
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="main">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-center flexcol" (click)="navigatePolicies()">
+          Coverage from 4 Policies >
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center flexcol">
+          <ion-thumbnail>
+            <img src="../../assets/icon/life-insurance.png">
+          </ion-thumbnail>
+          <span class="bold medium">Life</span>
+          <span class="medium">HKD 6,146,066</span>
+        </ion-col>
+        <ion-col class="ion-text-center flexcol">
+          <ion-thumbnail>
+            <img src="../../assets/icon/illness.png">
+          </ion-thumbnail>
+          <span class="bold medium">Critical Illness</span>
+          <span class="medium">up to HKD 1,000,000*</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center flexcol">
+          <ion-thumbnail>
+            <img src="../../assets/icon/hospital.png">
+          </ion-thumbnail>
+          <span class="bold medium">Medical & Hosp.</span>
+          <span class="medium">up to: HKD 721,800/year, <br> HKD 600,000/disability</span>
+        </ion-col>
+        <ion-col class="ion-text-center flexcol">
+          <ion-thumbnail>
+            <img src="../../assets/icon/ambulance.png">
+          </ion-thumbnail>
+          <span class="bold medium">Accident</span>
+          <span class="medium">up to HKD 1,000,000*</span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center flexcol">
+          <span class="small"> *Additional coverages detailed in provision</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="footer">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size=7 class="ion-text-left bold medium">Assets</ion-col>
+          <ion-col class="ion-text-right bold medium">Total HKD 255,309</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-left medium">Investment-Linked</ion-col>
+        <ion-col class="ion-text-right bold medium">HKD 10,539 ></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-left medium">Savings</ion-col>
+        <ion-col class="ion-text-right bold medium">HKD 161,688 ></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
